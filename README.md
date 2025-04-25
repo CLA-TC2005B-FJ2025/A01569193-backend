@@ -47,7 +47,8 @@ GO
 CREATE TABLE personajes (
    id INT PRIMARY KEY,
    name NVARCHAR(50),
-   email NVARCHAR(100)
+   email NVARCHAR(100),
+   whatsapp VARCHAR(10)
 );
 GO
 ```
@@ -61,10 +62,11 @@ GO
 
 ### Agregar algunos personajes
 ```sh
-INSERT INTO personajes (id, name, email) VALUES
-(1, 'Mark Grayson', 'mark@gmail.com'),
-(2, 'Allen the Alien', 'allen@gmail.com'),
-(3, 'Atom Eve', 'eve@gmail.com');
+INSERT INTO personajes (id, name, email, whatsapp) VALUES
+(1, 'Mark Grayson', 'mark@gmail.com','6147654321'),
+(2, 'Allen the Alien', 'allen@gmail.com','6141234567'),
+(3, 'Atom Eve', 'eve@gmail.com','6147766554'),
+(4, 'Santi Es','santi@tec.com','6143377661');
 GO
 ```
 

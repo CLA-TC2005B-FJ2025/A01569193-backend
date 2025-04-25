@@ -70,7 +70,7 @@ def get_personajes():
     if conn:
         try:
             cursor = conn.cursor(as_dict=True)
-            cursor.execute("SELECT id, name, email FROM personajes")
+            cursor.execute("SELECT id, name, email, whatsapp FROM personajes")
             personajes = cursor.fetchall()
             return jsonify(personajes), 200
         except Exception as e:
